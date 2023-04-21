@@ -1,7 +1,7 @@
 console.log("Start");
 
 const usersDB = {
-  "user1@hw.js": [{ title: "video1" }, { title: "video2" }],
+  "user1@hw.js": [{ title: "video1" }, { title: "Video2" }],
   "user2@hw.js": [{ genre: "genre1" }, { genre: "genre1" }],
   "user3@hw.js": [],
 };
