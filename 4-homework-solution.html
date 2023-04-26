@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Homework-4</title>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <h1>meet 9 homework</h1>
+    </header>
+
+    <div id="increment-decrement">
+
+    </div>
+    
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    
+    <script type="text/babel">
+      "use strict";
+
+      const a = React.createElement;
+
+      class IncrementDecrementButton extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {counter: 0 };
+        }
+
+        render() {
+          return (
+            <div>
+            <button 
+            onClick={() => this.setState({ counter: this.state.counter + 1 })}>
+            Increment
+            </button>
+
+            <button 
+            onClick={() => this.setState({ counter: this.state.counter - 1 })}>
+            Increment
+            </button>
+
+            <p>
+                {this.state.counter}
+                </p>
+
+            </div>
+          );
+        }
+      }
+
+      const container = document.querySelector("#increment_decrement_container");
+      ReactDOM.render(<IncrementDecrementButton/>, container);
+    </script>
+  </body>
+</html>
